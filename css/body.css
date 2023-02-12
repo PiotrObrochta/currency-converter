@@ -1,9 +1,5 @@
 .body {
-    width: 800px;
-    height: 800px;
     background-image: url(../images/waluty.jpg);
-    resize: both;
-    overflow: auto;
-    background-size: 800px;
-    background-repeat: no-repeat;
+    background-size: 1110px;
+    text-align: center;
 }
