@@ -9,7 +9,7 @@
 
 .form__legend {
     color: rgb(102 153 247);
-    text-align: left;
+    text-align: center;
     padding: 20px;
     font-size: 35px;
 }
@@ -21,6 +21,7 @@
     border-style: none;
     padding: 10px;
     color: rgb(0, 0, 0);
+    border-radius: 50px;
 }
 
 .form__button:hover {
