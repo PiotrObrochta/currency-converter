@@ -1,5 +1,6 @@
 .body {
     background-image: url(../images/waluty.jpg);
     background-size: 1110px;
-    text-align: center;
+background-repeat: no-repeat;
+background-position: center;
 }
