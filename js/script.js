@@ -1,31 +1,48 @@
-console.log("Taki tam kalkulator ")
+{
+    const calculateResult = (amount, currency) => {
+        const rateEUR = 4.71;
+        const rateUSD = 4.32;
+        const rateJPY = 3.32;
 
-let amountElement = document.querySelector(".js-amount");
-let currencyElement = document.querySelector(".js-currency");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+        switch (currency) {
+            case "EUR":
+                return amount / rateEUR;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+            case "USD":
+                return amount / rateUSD;
 
-    let amount = amountElement.value;
-    let currency = currencyElement.value
+            case "JPY":
+                return amount / rateJPY;
+        }
+    };
 
-    let rate;
+    const updateResultText = (amount, result, currency) => {
+        const resultElement = document.querySelector(".js-result");
 
-    switch (currency) {
-        case "EUR":
-            rate = 4, 71;
-            break;
-        case "USD":
-            rate = 4.32;
-            break;
-        case "JPY":
-            rate = 3.32;
+        resultElement.innerText = `${result.toFixed(4)} ${currency}`;
+        
     }
 
-    const result = amount / rate;
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    resultElement.innerText = `${result.toFixed(4)} ${currency}`;
+        const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
 
-});
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
+
+        const result = calculateResult(amount, currency);
+
+        updateResultText(amount, result, currency);
+
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
+}
