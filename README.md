@@ -4,6 +4,13 @@ https://piotrobrochta.github.io/currency-converter/
 ## Description
 This is my first Currency-Converter. 
 
+### I used technology 
+
+1. **BEM** convention 
+2. **JAVA Script**
+3. **ES6+ feature** 
+
+
 *The animation shows the simple operation of the calculator* ⬇
 
 
