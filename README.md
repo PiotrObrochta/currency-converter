@@ -2,7 +2,7 @@
 ## Trial ⬇
 https://piotrobrochta.github.io/currency-converter/
 ## Description
-This is my first Currency-Converter. 
+This is my first Currency-Converter. I built this Currency-Converter as part of studying at the YOUCODE programming school.
 
 ### I used technology 
 
